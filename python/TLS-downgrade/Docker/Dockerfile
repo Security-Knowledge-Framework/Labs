@@ -1,5 +1,5 @@
 FROM alpine:3.6
-LABEL Glenn ten Cate <glenn.ten.cate@owasp.org>
+LABEL Glenn ten Cate <glenn.ten.cate@gmail.com>
 
 # Saving space by cloning from Git, then copying only what we need:
 RUN apk update --no-cache && apk add git; cd /tmp && mkdir /skf-labs \

@@ -1,4 +1,4 @@
-# OWASP S.K.F - Labs
+# SKF - Labs
 https://github.com/blabla1337/skf-labs
 
 ## Index:
@@ -10,7 +10,7 @@ https://github.com/blabla1337/skf-labs
 
 
 ## 1. Introduction
-The following manual has been designed in order to serve as a high-level guide for anyone interested in getting hands-on the OWASP S.K.F Labs. These labs are designed to help security professionals and beginners to learn the basics of web app hacking through real examples and explanatory guides.
+The following manual has been designed in order to serve as a high-level guide for anyone interested in getting hands-on the SKF Labs. These labs are designed to help security professionals and beginners to learn the basics of web app hacking through real examples and explanatory guides.
 
 ## 2. Proxy configuration
 ### 2.1 ZAP

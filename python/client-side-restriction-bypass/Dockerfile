@@ -8,7 +8,7 @@ RUN apk update --no-cache && apk add python3 python3-dev py3-pip bash git dos2un
 
 ### Dynamic layers
 FROM skf-alpine37
-LABEL Glenn ten Cate <glenn.ten.cate@owasp.org>
+LABEL Glenn ten Cate <glenn.ten.cate@gmail.com>
 
 RUN addgroup -g 1000 app 
 RUN adduser -u 1000 -G app -D -h /home/app app

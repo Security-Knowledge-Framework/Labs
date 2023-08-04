@@ -26,4 +26,4 @@ These terms and conditions are effective as of 2022-09-19
 
 **Contact Us**
 
-If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at glenn.ten.cate@owasp.com.
+If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at glenn.ten.cate@gmail.com

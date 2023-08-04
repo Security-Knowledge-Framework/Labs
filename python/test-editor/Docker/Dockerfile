@@ -1,5 +1,5 @@
 FROM alpine:3.7
-MAINTAINER Glenn ten Cate <glenn.ten.cate@owasp.org>
+MAINTAINER Glenn ten Cate <glenn.ten.cate@gmail.com>
 RUN apk update --no-cache && apk add python3 \
 python3-dev \
 py3-pip \ 

@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-The OWASP SKF Labs are intentionally vulnerable web applications, provided for educational purporses. 
+The SKF Labs are intentionally vulnerable web applications, provided for educational purporses. 
 
 Containerized applications that include security issues are most likely built that way on purpose, for students to attack and exploit.
 

@@ -1,6 +1,6 @@
 ### STATIC LAYER
 FROM openjdk:8-jdk-alpine as builder
-LABEL MAINTAINER="Glenn ten Cate <glenn.ten.cate@owasp.org>"
+LABEL MAINTAINER="Glenn ten Cate <glenn.ten.cate@gmail.com>"
 RUN  apk add maven
 
 

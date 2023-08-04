@@ -1,7 +1,5 @@
 **Privacy Policy**
 
-Glenn ten Cate & Riccardo ten Cate built the Security Knowledge Framework app as an Open Source app. This SERVICE is provided by OWASP & OpenSSF at no cost and is intended for use as is.
-
 This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use Security Knowledge Framework.
 
 If you choose to use Security Knowledge Framework, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
@@ -53,5 +51,5 @@ This policy is effective as of 2022-09-19
 
 **Contact Us**
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at glenn.ten.cate@owasp.com.
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at glenn.ten.cate@gmail.com
 

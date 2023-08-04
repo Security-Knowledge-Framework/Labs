@@ -1,14 +1,14 @@
 ### Static layers
 
 FROM alpine:3.7 AS skf-alpine37
-LABEL Glenn ten Cate <glenn.ten.cate@owasp.org>
+LABEL Glenn ten Cate <glenn.ten.cate@gmail.com>
 
 # Installing needed binaries and deps. Then removing unneeded deps:
 RUN apk update --no-cache && apk add python3 python3-dev py3-pip zip bash git dos2unix imagemagick
 
 ### Dynamic layers
 FROM skf-alpine37
-LABEL Glenn ten Cate <glenn.ten.cate@owasp.org>
+LABEL Glenn ten Cate <glenn.ten.cate@gmail.com>
 
 RUN addgroup -g 1000 app 
 RUN adduser -u 1000 -G app -D -h /home/app app

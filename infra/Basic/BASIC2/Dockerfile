@@ -25,5 +25,7 @@ RUN chmod 777 /etc/passwd
 
 # --------- start ----------
 COPY ./assets/startup.sh /startup.sh
+RUN chmod +x /startup.sh
+
 EXPOSE 22 
 ENTRYPOINT /startup.sh

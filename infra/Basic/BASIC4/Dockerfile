@@ -25,5 +25,7 @@ RUN echo 'NPA_Run_SvcP:PProm02*' | chpasswd
 
 # --------- start ----------
 COPY ./assets/startup.sh /startup.sh
+RUN chmod +x /startup.sh
+
 EXPOSE 22 
 ENTRYPOINT /startup.sh

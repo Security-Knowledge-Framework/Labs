@@ -1,2 +1,2 @@
 service ssh start 
-/bin/sh
+/bin/bash

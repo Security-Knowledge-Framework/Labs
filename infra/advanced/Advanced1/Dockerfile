@@ -24,5 +24,7 @@ RUN usermod -aG sudo anne
 RUN apt-get -y install apache2
 COPY ./assets/index.html /var/www/html/index.html
 COPY ./assets/startup.sh /startup.sh
+RUN chmod +x /startup.sh
+
 EXPOSE 21 22 7000-7010
 ENTRYPOINT /startup.sh

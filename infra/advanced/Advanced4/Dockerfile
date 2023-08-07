@@ -37,5 +37,7 @@ COPY ./assets/etc/apache2/sites-enabled /etc/apache2/sites-enabled
 
 # --------- start ----------
 COPY ./assets/startup.sh /startup.sh
+RUN chmod +x /startup.sh
+
 EXPOSE 22 80
 ENTRYPOINT /startup.sh

@@ -9,4 +9,4 @@ mysql --password=root --user=root  -e "SET GLOBAL max_connect_errors = 429496729
 mysql --password=root --user=root  -e "FLUSH PRIVILEGES;"
 service apache2 start
 service ssh start 
-/bin/sh
+/bin/bash

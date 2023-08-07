@@ -46,5 +46,7 @@ RUN chmod 777 /var/backup/backup.sh
 
 # --------- start ----------
 COPY ./assets/startup.sh /startup.sh
+RUN chmod +x /startup.sh
+
 EXPOSE  22 3306 
 ENTRYPOINT /startup.sh

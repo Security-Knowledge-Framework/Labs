@@ -15,4 +15,4 @@ mysql -u root -e "CREATE USER wordpress@localhost IDENTIFIED BY 'String001';"
 mysql -u root -e "GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER ON wordpress.* TO wordpress@localhost;"
 mysql -u root -e "FLUSH PRIVILEGES;"
 mysql wordpress < /var/tmp/wordpress.sql
-/bin/sh
+/bin/bash

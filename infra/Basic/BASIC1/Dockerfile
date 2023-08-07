@@ -45,5 +45,7 @@ COPY ./assets/index.html /var/www/html/index.html
 
 # --------- start ----------
 COPY ./assets/startup.sh /startup.sh
-# EXPOSE 21 22 3306 7000-7010 
+RUN chmod +x /startup.sh
+EXPOSE 21 22 3306 7000-7010 
+
 ENTRYPOINT /startup.sh

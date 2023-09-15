@@ -42,4 +42,4 @@ RUN find . -name "*.sh" -o -name "*.py" -o -name "*.css" -o -name "*.js" | xargs
 RUN find . -name "*.sh" -o -name "*.py" | xargs chmod +x
 
 # Starting the actual application:
-ENTRYPOINT [ "python2", "./ldap-injection-harder.py" ]
+ENTRYPOINT [ "/home/app/Ldap-injection-harder/run_ldap_server.sh" ]

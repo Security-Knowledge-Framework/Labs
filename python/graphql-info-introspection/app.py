@@ -6,9 +6,6 @@ import graphene
 from graphene_sqlalchemy import SQLAlchemyObjectType, SQLAlchemyConnectionField
 from flask_graphql import GraphQLView
 
-
-
-
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 
@@ -96,4 +93,3 @@ def index():
 
 if __name__ == '__main__':
      app.run('0.0.0.0')
-

@@ -1,5 +1,5 @@
 flask 
-flask-graphql 
+flask-graphql
 flask-migrate 
 flask-sqlalchemy 
 graphene==2.1.8

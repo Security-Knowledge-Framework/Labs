@@ -1,6 +1,6 @@
 ### Static layers
 
-FROM alpine:3.7 AS skf-alpine37
+FROM alpine:3.9 AS skf-alpine39
 LABEL Glenn ten Cate <glenn.ten.cate@gmail.com>
 
 # Installing needed binaries and deps. Then removing unneeded deps:
@@ -16,7 +16,7 @@ RUN apk update --no-cache && apk add python3 \
   g++
 
 ### Dynamic layers
-FROM skf-alpine37
+FROM skf-alpine39
 LABEL Glenn ten Cate <glenn.ten.cate@gmail.com>
 
 RUN addgroup -g 1000 app 
@@ -29,6 +29,9 @@ COPY ./ /home/app/graphql-info-introspection
 WORKDIR /home/app/graphql-info-introspection
 
 RUN chown -R app:app /home/app/graphql-info-introspection
+
+# Upgrade pip
+RUN pip3 install --upgrade pip
 
 # Switching to the limited user
 USER app

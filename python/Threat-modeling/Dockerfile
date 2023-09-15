@@ -1,25 +1,28 @@
 ### Static layers
 
-FROM alpine:3.7 AS skf-alpine37
+FROM alpine:3.18 AS skf-alpine318
 LABEL Glenn ten Cate <glenn.ten.cate@gmail.com>
 
 # Installing needed binaries and deps. Then removing unneeded deps:
 RUN apk update --no-cache && apk add python3 python3-dev py3-pip bash git dos2unix
 
 ### Dynamic layers
-FROM skf-alpine37
+FROM skf-alpine318
 LABEL Glenn ten Cate <glenn.ten.cate@gmail.com>
 
 RUN addgroup -g 1000 app 
 RUN adduser -u 1000 -G app -D -h /home/app app
 RUN rm -rf /var/cache/apk/APKINDEX*
 
-COPY ./ /home/app/CSRF
+COPY ./ /home/app/threat
 
 # Switching to the new app location:
-WORKDIR /home/app/CSRF
+WORKDIR /home/app/threat
 
-RUN chown -R app:app /home/app/CSRF
+RUN chown -R app:app /home/app/threat
+
+# Upgrade pip
+RUN pip3 install --upgrade pip
 
 # Switching to the limited user
 USER app
@@ -34,4 +37,4 @@ RUN find . -name "*.sh" -o -name "*.py" -o -name "*.css" -o -name "*.js" | xargs
 RUN find . -name "*.sh" -o -name "*.py" | xargs chmod +x
 
 # Starting the actual application:
-ENTRYPOINT [ "python3", "./CSRF.py" ]
+ENTRYPOINT [ "python3", "./TM.py" ]

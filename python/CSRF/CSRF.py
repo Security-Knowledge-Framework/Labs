@@ -11,9 +11,10 @@ app.config['DEBUG'] = True
 # You can also replace password with static password:  PASSWORD='pass!@#example'
 app.config.update(dict(
     SECRET_KEY= "woopie",
-    SESSION_COOKIE_HTTPONLY = True
+    SESSION_COOKIE_HTTPONLY = True,
+    SESSION_COOKIE_SAMESITE = None,  # Set the SameSite attribute to 'None'
+    SESSION_COOKIE_SECURE = True       # Also set the Secure flag for the cookie when using 'None'
 ))
-
 
 @app.route("/")
 def start():
@@ -50,5 +51,5 @@ def page_not_found(e):
     return render_template("404.html")
 
 if __name__ == "__main__":
+    #app.run(host='0.0.0.0', ssl_context=('cert.pem', 'key.pem'))
     app.run(host='0.0.0.0')
-

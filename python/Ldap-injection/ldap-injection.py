@@ -7,11 +7,11 @@ app = Flask(__name__, static_url_path = '/static', static_folder = 'static')
 app.config['DEBUG'] = True
 
 # start the LDAP server
-Popen("chmod +x ./glauth32", shell=True)
-Popen("sh run_ldap_server.sh", shell=True)
-time.sleep(5)
+#Popen("chmod +x ./glauth32", shell=True)
+#Popen("sh run_ldap_server.sh", shell=True)
+time.sleep(3)
 # connect to the LDAP server
-ldap_connection =ldap.initialize("ldap://127.0.0.1:389")
+ldap_connection =ldap.initialize("ldap://localhost:1389")
 ldap_connection.simple_bind_s("cn=ldapadmin,ou=accounts,dc=com", "mysecret")
 
 @app.route("/")

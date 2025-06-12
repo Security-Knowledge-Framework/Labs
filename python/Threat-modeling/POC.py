@@ -36,7 +36,7 @@ for x in range(timestamp1, timestamp2):
                                ._ o o
                                \_`-)|_
                             ,""       \ 
-                          ,"  ## |   ಠ ಠ. Add commentMore actions
+                          ,"  ## |   ಠ ಠ. 
                         ," ##   ,-\__    `.
                       ,"       /     `--._;)
                     ,"     ## /
